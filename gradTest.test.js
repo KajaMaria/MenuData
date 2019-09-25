@@ -1,12 +1,10 @@
 function createMenuData(data) {
   const result = [];
   for (let i = 0; i < data.length; i++) {
-    var child_array = [];
-    data_array = data[i].split("/");
+    const data_array = data[i].split("/");
     if (data_array.length > 1) {
       if (result.length === 0) {
-        child_array.push(data_array[1]);
-        result.push({ ["title"]: data_array[0], ["data"]: child_array });
+        result.push({ ["title"]: data_array[0], ["data"]: [data_array[1]] });
       } else {
         let j = 0;
         for (; j < result.length; j++) {
@@ -17,8 +15,7 @@ function createMenuData(data) {
           }
         }
         if (j >= result.length) {
-          child_array.push(data_array[1]);
-          result.push({ ["title"]: data_array[0], ["data"]: child_array });
+          result.push({ ["title"]: data_array[0], ["data"]: [data_array[1]]});
         }
       }
     }

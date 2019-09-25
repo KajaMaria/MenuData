@@ -8,8 +8,11 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "acorn": "^7.1.0"
+  },
   "devDependencies": {
+    "eslint": "^6.4.0",
     "jest": "^24.9.0"
   }
 }
