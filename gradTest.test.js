@@ -20,6 +20,7 @@ function createMenuData(data) {
       }
     }
   }
+  return result 
 }
 
 describe("menu Data Generator", () => {
