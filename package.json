@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "acorn": "^7.1.0"
+    "acorn": "^7.1.1"
   },
   "devDependencies": {
     "eslint": "^6.4.0",
